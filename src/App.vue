@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <BasicComponents />
+    <DivideLine />
+    <ListRender />
+    <DivideLine />
+    <StyleBind />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import BasicComponents from "./components/BasicComponents.vue";
+import DivideLine from "./components/DivideLine.vue";
+import ListRender from "./components/ListRender.vue";
+import StyleBind from "./components/StyleBind.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    BasicComponents,
+    DivideLine,
+    ListRender,
+    StyleBind,
   },
 };
 </script>
@@ -21,8 +30,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
